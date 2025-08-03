@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Repo!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            color: #39ff14;
+            text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
+            }
+            to {
+                text-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;
+            }
+        }
+        .button {
+            background: #222;
+            color: #39ff14;
+            border: 2px solid #39ff14;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-family: 'Press Start 2P', cursive;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .button:hover {
+            background: #39ff14;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Code Explorers!</h1>
+    <p>You have successfully cloned the repo! Now, it's time to do something fun.</p>
+    <button class="button" onclick="showSecret()">Click Me for a Surprise!</button>
+    <div id="secret" style="display: none; margin-top: 30px;">
+    </div>
+    <script>
+        function showSecret() {
+            var secretDiv = document.getElementById('secret');
+            secretDiv.style.display = 'block';
+            secretDiv.innerHTML = "<strong>🎉 Surprise! Happy Coding! 🎉</strong>";
+        }
+    </script>
+</body>
+</html>
