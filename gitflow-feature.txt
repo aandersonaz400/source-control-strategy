@@ -1,0 +1,1 @@
+This is a feature implemented using GitFlow branching strategy
